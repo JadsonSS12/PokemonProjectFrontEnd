@@ -1,6 +1,6 @@
 export interface PokemonData {
     id: number,
-    title: string,
+    name: string,
     atack: number,
     defense: number,
     type: string,

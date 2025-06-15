@@ -16,7 +16,7 @@ function App() {
           <Card 
             atack={PokemonData.atack}
             defense={PokemonData.defense}
-            title={PokemonData.title}
+            name={PokemonData.name}
             type={PokemonData.type}
             image={PokemonData.image}/>)}
         </div>

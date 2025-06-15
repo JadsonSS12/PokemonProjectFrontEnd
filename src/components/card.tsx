@@ -3,20 +3,19 @@ import "./card.css"
 interface CardProps{
     atack: number,
     defense: number,
-    title: string,
+    name: string,
     type: string,
     image: string
 }
 
-export function Card({ atack, defense, title, type, image }: CardProps){
+export function Card({ atack, defense, name, type, image }: CardProps){
     return(
         <div className="card">
-            <img/>
-            <h2></h2>
-            <p>Nome: </p>
-            <p>Tipo: </p>
-            <p>Atk: </p>
-            <p>Def: </p>
+            <img src={image}/>
+            <h2>{name}</h2>
+            <p>Tipo: {type} </p>
+            <p>Atk: {atack}</p>
+            <p>Def: {defense}</p>
         </div>
     )
 }
